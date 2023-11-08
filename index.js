@@ -15,11 +15,24 @@ console.log(a+b)
 const a1 =10
 const b1 =20
 console.log(a1+b1)
-// 배열
+// 숫자 배열
 const arr =[1,2,3,4]
+const arr2=["최재식","최현기","바보"]
+const arr3 =["최재식",1,2,"최현기"]
 console.log(arr)
+console.log(arr2)
+console.log(arr3)
 console.log(arr[0])
-
+// 객체
+const obj={name : "최재식",hobby:"달리기"}
+const obj1={name : "최재식",hobby:"달리기"}
+const obj2=[
+    {name : "최재식",hobby:"달리기"}
+    ,{name : "최현기",hobby:"유튜브시청"}
+]
+console.log(obj)
+console.log(obj2)
+console.log(obj2[0].hobby)
 
 
 
