@@ -31,8 +31,8 @@ const obj3=[
     ,{name : "최현기",hobby:"유튜브시청"}
 ]
 console.log(obj)
-console.log(obj3[0])// 배열에서 원하는 객체 가져오기
-console.log(obj3[0].hobby) //객체 안의 원하는 값 하나 가져오기
+console.log(obj2[0])// 배열에서 원하는 객체 가져오기
+console.log(obj2[0].hobby) //객체 안의 원하는 값 하나 가져오기
 
 
 
