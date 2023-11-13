@@ -33,7 +33,7 @@ function count(x){
     if(x === 0){
         document.write("함수 실행 종료");
     }else{
-        document.write("count x값:"+x+"<br>");
+        document.write("count x값:"+x);
         count(x-1);
     }
 }count(5);
