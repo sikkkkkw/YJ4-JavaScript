@@ -24,3 +24,9 @@ for(let i = 2; i <= 9; i++){
         }
     }
 }
+// 피라미드 만들기
+for (let i = 1; i <= 10; i++) {
+    for (let k = 1; k <= i; k++) {
+    document.write("*");
+}document.write("<br>");
+}
