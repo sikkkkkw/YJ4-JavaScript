@@ -85,7 +85,7 @@ document.write(`최초로 합이 10 이상인 위치 ${r}, 합은 ${sum2}`);
 document.write("<br>")
 // continue문
 let t,sum3=0;
-for(t=1; t<=10; t++){
+for(t = 1; t <= 10; t++){
     if(t % 2 ==0)
     continue;
     sum3 += t;

@@ -11,10 +11,10 @@ console.log(address)
 //
 const a ="10"
 const b ="20"
-console.log(a+b)
+console.log(a + b)
 const a1 =10
 const b1 =20
-console.log(a1+b1)
+console.log(a1 + b1)
 // 숫자 배열
 const arr =[1,2,3,4]
 const arr2=["최재식","최현기","바보"]

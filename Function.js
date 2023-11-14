@@ -8,22 +8,22 @@
 
 //기명 함수 선언식
 function addNum(x,y){
-    document.write(parseFloat(x)+y+"<br>");
-    document.write(x-y+"<br>");
+    document.write(parseFloat(x) + y + "<br>");
+    document.write(x - y + "<br>");
 }
 addNum("2.5",3);
 addNum(10);//인자값이 1개라서 NaN
 //화살표 함수(function 대신에 =>사용)
 let addNum1 = (x,y)=>{
-    return x+y;
+    return x + y;
 }
 document.write(addNum1(2,3)+"<br>");
 
-let addNum2 = (x,y) => x+y;
+let addNum2 = (x,y) => x + y;
 document.write(addNum2(2,3)+"<br>");
 //반환문(Return)과 매개변수(Parameter)
 function multiNum(x,y){
-    return x*y;
+    return x * y;
 }
 var num = multiNum(3,4);
 document.write(num+"<br>");//변수 num 값 출력
@@ -34,6 +34,6 @@ function count(x){
         document.write("함수 실행 종료");
     }else{
         document.write("count x값:"+x+"<br>");
-        count(x-1);
+        count(x - 1);
     }
 }count(5);

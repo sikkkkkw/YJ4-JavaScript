@@ -1,4 +1,4 @@
-let x =10, y = 20;
+let x = 10, y = 20;
 if(x === y){
     document.write("x와 y는 같습니다."+"<br>");    
 }
@@ -29,8 +29,8 @@ if(x === y){
 
 
 
-let a =200;
-if(a<100){
+let a = 200;
+if(a < 100){
     document.write("100보다 작구나"+"<br>");
 }else{
     document.write("100보다 크거나 같구나"+"<br>");
