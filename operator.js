@@ -37,7 +37,7 @@
 // document.write((x || y)+"<br>"); //x,y 중에 하나라도(or) true면 true 
 // document.write(!x); //x가 ture인데 !(not)이므로 false 
 
-let x = 3+4; //7
+let x = 3 + 4; //7
 let y = "좋은 "+"하루되세요"; //좋은 하루되세요
 let z =12 +"월" //12월
 document.write(x+"<br>");
