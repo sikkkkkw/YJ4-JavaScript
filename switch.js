@@ -11,17 +11,17 @@ switch(a % 2){
 let site = prompt("즐겨 찾는 포털 사이트는?(네이버,다음,네이트,구글)","네이버");
 let url;
 switch(site){
-    case "구글": url="www.google.com";
+    case "구글": url = "www.google.com";
     break;
-    case "다음": url="www.daum.net";
+    case "다음": url = "www.daum.net";
     break;
-    case "네이버": url="www.naver.com";
+    case "네이버": url = "www.naver.com";
     break;
-    case "네이트": url="www.nate.com";
+    case "네이트": url = "www.nate.com";
     break;
     default:alert("보기 중에 없는 사이트입니다.");
 }
-if(url)location.href="http://"+url;//location.href 내장함수
+if(url)location.href = "http://" + url;//location.href 내장함수
 
 // let x = prompt("타입을 입력하세요","문자열");
 // let y;
