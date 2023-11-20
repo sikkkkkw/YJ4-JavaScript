@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>중첩 if문</title>
+</head>
+<body>
+  <script>
+    let age = prompt("나이를 입력하세요.")
+    let gen = prompt("성별을 입력하세요.")
+
+    if(isNaN(age)) {
+      alert("입력 오류입니다. 나이를 숫자로 입력하세요.");
+        location.reload();
+    }
+
+    if(age < 18) {
+      document.write("18세 이상만 입장이 가능합니다.")
+    } if(age >= 18) {
+      if(gen === "남자") {
+        document.write("남자는 입장료가 20,000원입니다.")
+      }
+      else if(gen === "여자") {
+        document.write("여자는 입장료가 10,000원입니다.")
+      }
+      else {
+        alert("입력 오류입니다. 성별을 정확하게 입력하세요. (남자 또는 여자)");
+        location.reload();
+    }
+    }
+  </script>
+</body>
+</html>
