@@ -93,3 +93,13 @@ for(t = 1; t <= 10; t++){
 }
 document.write(`1에서 10까지 홀수의 합은 ${sum3}`);
 document.write("<br>");
+
+for(let i= i;i<=100; i++){
+    if(i % 5 == 0 && i % 7 != 0){
+        document.write(`<p class ='red'>${i}</p>`);
+    }else if(i % 7 == 0 && i % 5 != 0){
+        document.write(`<p class ='blue'>${i}</p>`);
+    }else if(i % 7 == 0 && i % 5 == 0){
+        document.write(`<p class ='grnne'>${i}</p>`);
+    }
+}
