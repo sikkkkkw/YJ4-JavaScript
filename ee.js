@@ -1,9 +1,12 @@
-for(let i= 1;i<=100; i++){
-    if(i % 5 == 0 && i % 7 != 0){
-        document.write(`<p class ='red'>${i}</p>`);
-    }else if(i % 7 == 0 && i % 5 != 0){
-        document.write(`<p class ='blue'>${i}</p>`);
-    }else if(i % 7 == 0 && i % 5 == 0){
-        document.write(`<p class ='green'>${i}</p>`);
+//중첩 for문
+let x ="<table border='1'>"
+document.write(x);
+for(let i = 1; i<= 3; i++){
+    document.write("<tr>");
+    for(let k = 1; k <=2; k++ ){
+        document.write(`<td>${i}행 ${k}열</td>`);
     }
+    document.write("</tr>");
+    document.write(`<br>`);
 }
+document.write("<table>");

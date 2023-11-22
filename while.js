@@ -28,3 +28,16 @@ while(i2 >= 10){
     }
     i2--;
 }
+// while문
+let i3 =1;
+while(i3 <= 10){
+    document.write(i3+" ");
+    i3++
+}document.write("<br>");
+//while문으로 1부터 10까지 합 구하는 프로그램
+while(i <= 10){
+    sum+=i;
+    i++;
+}
+document.write(`1부터 10까지의 합 ${sum}입니다.`)
+document.write("<br>")

@@ -54,19 +54,7 @@ for(let i in arr){
 for(let item of arr){
     document.write(item+" ");
 }document.write("<br>");
-// while문
-let i =1;
-while(i <= 10){
-    document.write(i+" ");
-    i++
-}document.write("<br>");
-//while문으로 1부터 10까지 합 구하는 프로그램
-while(i <= 10){
-    sum+=i;
-    i++;
-}
-document.write(`1부터 10까지의 합 ${sum}입니다.`)
-document.write("<br>")
+
 //do/while문
 let id =1;//전역변수
 do{
@@ -83,17 +71,27 @@ for(r = 1; r <= 100; r++){
 }
 document.write(`최초로 합이 10 이상인 위치 ${r}, 합은 ${sum2}`);
 document.write("<br>")
+// for 문을 이용하여 1부터 10까지 반복하도록 작성하는 예제 그리고 break문을 사용하여 변수 i의 값이 6일 경우 강제로 반복문 종료
+for(let i =1; i <= 10; i++){
+    if(i == 6)break;
+    document.write(i,"<br>");
+}
+document.write("=== The End===");
 // continue문
 let t,sum3=0;
 for(t = 1; t <= 10; t++){
     if(t % 2 ==0)
     continue;
     sum3 += t;
-
 }
 document.write(`1에서 10까지 홀수의 합은 ${sum3}`);
 document.write("<br>");
-
+// for문을 이용해 1부터 10까지 i가 2의 배수일 경우에만 continue문을 실행하여 홀수만 출력
+for(let i = 1; i <= 10; i++){
+    if(i % 2 === 0)continue;
+    document.write(i,"<br>");
+}
+document.write("=== The End===");
 for(let i= i;i<=100; i++){
     if(i % 5 == 0 && i % 7 != 0){
         document.write(`<p class ='red'>${i}</p>`);
@@ -103,3 +101,15 @@ for(let i= i;i<=100; i++){
         document.write(`<p class ='grnne'>${i}</p>`);
     }
 }
+//중첩 for문
+let x ="<table border='1'>"
+document.write(x);
+for(let i = 1; i<= 3; i++){
+    document.write("<tr>");
+    for(let k = 1; k <=2; k++ ){
+        document.write(`<td>${i}행 ${k}열</td>`);
+    }
+    document.write("</tr>");
+    document.write(`<br>`);
+}
+document.write("<table>");
