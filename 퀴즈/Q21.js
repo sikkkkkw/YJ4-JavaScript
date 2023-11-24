@@ -17,5 +17,5 @@ arr1.splice(4,1,"치킨","피자");
 document.write(arr1,"<br>")
 
 //map(),foreach(),filter(),reduce()
-//map과 foreach의 다른점?
+//map과 foreach의 다른점? map은 변형된 값을 새로운 배열로 반환하고, forEach는 각 요소에 대한 동작을 수행하며 반환 값이 없습니다.
 //callback함수가 무엇인지?
