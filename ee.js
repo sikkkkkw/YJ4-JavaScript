@@ -1,12 +1,19 @@
-//중첩 for문
-let x ="<table border='1'>"
-document.write(x);
-for(let i = 1; i<= 3; i++){
-    document.write("<tr>");
-    for(let k = 1; k <=2; k++ ){
-        document.write(`<td>${i}행 ${k}열</td>`);
-    }
-    document.write("</tr>");
-    document.write(`<br>`);
+let tv = new Object();
+tv.color = "white";
+tv.price = 300000;
+tv.info = function(){
+    document.write(`tv 색상: ${this.color} <br>`);
+    document.write(`tv 색상: ${this.price} <br>`);
 }
-document.write("<table>");
+let car = {
+    color : "black",
+    price : 5000000,
+    info: function(){
+        document.write(`car 색상: ${this.color} <br>`);
+        document.write(`car 색상: ${this.price} <br>`);
+    }
+};
+document.write("<h1>tv 객체메서드 호출</h1>");
+tv.info();
+document.write("<h1>car 객체메서드 호출</h1>");
+car.info();

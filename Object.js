@@ -1,4 +1,6 @@
 //내장 객체 생성
+// 기본형 : 참조 변수(인스턴스 이름) = new  생성함수()
+// this는 인스턴스 자신(self)을 가리키는 참조변수
 let tv = new Object();
 tv.color = "white";
 tv.price = 300000;
