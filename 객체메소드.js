@@ -17,3 +17,4 @@ document.write("<h1>tv 객체메서드 호출</h1>");
 tv.info();
 document.write("<h1>car 객체메서드 호출</h1>");
 car.info();
+
