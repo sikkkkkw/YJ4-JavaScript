@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- 타이머를 만들기 -->
+<body>
+    <div class="second">0</div>
+    <script>
+        const second = document.querySelector(".second");
+        second.innerHTML = 55
+        let addNum = 0;
+        setInterval(
+            function(){
+                second.innerHTML=addNum++
+            },
+            1000
+        )
+        console.log(second)
+
+    </script>
+</body>
+</html>
