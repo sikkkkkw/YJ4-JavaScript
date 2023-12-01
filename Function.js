@@ -37,3 +37,20 @@ function count(x){
         count(x - 1);
     }
 }count(5);
+
+let count = 0;
+
+myFnc();
+
+function myFnc(){
+    count++;
+    document.write("hello"+count,"<br>");
+}
+myFnc();
+
+let theFnc = function(){
+    count++;
+    document.write("bye"+count,"<br>");
+}
+theFnc();
+
