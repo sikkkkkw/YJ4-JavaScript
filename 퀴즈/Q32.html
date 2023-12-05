@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num1 = parseInt(prompt('숫자를 입력하세요.',8));
+        let num2 = parseInt(prompt('숫자를 입력하세요',4));
+        let d = prompt('연산자를 입력하세요','*');
+        function calculator(){
+
+            if(d === "+"){
+                document.write(`${num1}+${num2}=${num1+num2}`);
+            }else if(d === "-"){
+                document.write(`${num1}-${num2}=${num1-num2}`);
+            }else if(d === "*"){
+                document.write(`${num1}*${num2}=${num1*num2}`);
+            }else if(d === "%"){
+                document.write(`${num1}%${num2}=${num1%num2}`);
+            }else if(d === "/"){
+                document.write(`${num1}/${num2}=${num1/num2}`);
+            }else{
+                alert('연산자를 제대로 입력하세요.');
+                location.reload();
+            }
+        }
+        calculator();
+    </script>
+</body>
+</html>
