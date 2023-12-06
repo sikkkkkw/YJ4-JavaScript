@@ -21,8 +21,8 @@ for (let i = 0; i < ids.length; i++) {
 
     
     if (element) {
-        const upperElement = element.innerHTML.replace(" KyungBuk National University", "Daegu University");
-        element.innerHTML = upperElement;
+        const reElement = element.innerHTML.replace("KyungBuk National University", "Daegu University");
+        element.innerHTML = reElement;
     }
 
     console.log(element);
@@ -35,9 +35,23 @@ for(let i =0; i < skills1.length; i ++){
     const skill = document.getElementById(skillsid);
 
     if(skill){
-        const upperSkil = skill.innerHTML.substring(0,11);
-        skill.innerHTML = upperSkil;
+        const subSkil = skill.innerHTML.substring(0,11);
+        skill.innerHTML = subSkil;
     }
 }
 
+  document.getElementById("gallery").addEventListener("click",function(){
+    setTimeout(function(){
+        showImages();
+    }, 1000);
+  });
+  function showImages(){
+    const images = document.querySelectorAll("article img");
+    images.forEach(function(img, index){
+        img.style.display = "inline";
+        if(index > 0){
+            img.style.marginLeft = "10px";
+        }
+    });
+  }
 
