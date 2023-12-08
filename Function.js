@@ -53,4 +53,84 @@ let theFnc = function(){
     document.write("bye"+count,"<br>");
 }
 theFnc();
+// 즉시 실행 함수 
+(function(){
+    let num = 100;
+    function menu(){
+    num += 100;
+    alert(num);
+    }   
+    menu();
+}());
+(function(){
+    let num = 100;
+    function menu(){
+        alert(num);
+    }
+}());
+// 재귀함수
+let num = 0;
+function testFnc(){
+    num++;
+    document.write(num,"<br>");
+    if(num == 10)
+        return;
 
+        testFnc();
+      
+     
+}
+testFnc(); 
+// 객체 생성자 함수
+function CheckWeight(name,height,weight){
+    this.userName = name;
+    this.userHeight = height;
+    this.userWeight = weight;
+    this.minWeight;
+    this.maxWeight;
+    this.getinfo = function(){
+        let str =""
+        str+="이름:" +this.userName+",";
+        str+="키:"+this.userHeight+",";
+        str+="몸무게:"+this.userWeight+"<br>";
+        return str;
+    }
+    this.getResult = function(){
+        this.minWeight=(this.userHeight-100)*0.9-5;
+        this.maxWeight=(this.userHeight-100)*0.9+5;
+
+        if(this.userWeight >= this.minWeight && this.userWeight <= this.maxWeight){
+            return "정상 몸무게입니다.";
+        }else if(this.userWeight < this.minWeight){
+            return "정상 몸무게보다 미달입니다.";
+        }else{
+            return "정상 몸무게보다 초과입니다."
+        }
+    }
+}
+
+let jang = new CheckWeight("장보리",168,62);
+let park = new CheckWeight("박박박",180,80);
+console.log(jang);
+console.log(park);
+
+document.write(jang.getinfo());
+document.write(jang.getResult());
+
+
+function Car(name,height,weight,color){
+    this.carName = name;
+    this.carHeight = height;
+    this.carWeight = weight;
+    this.carColor = color;
+
+    this.getinfo1 = function(){
+        let str =""
+        str+="이름"+this.carName+",";
+        str+="높이"+this.carHeight+",";
+        str+="무게"+this.carWeight+",";
+        str+="색"+this.carColor+"<br>";
+        return str;
+    }
+}
+let car1 = new car("소나타",120,3000,"red");
