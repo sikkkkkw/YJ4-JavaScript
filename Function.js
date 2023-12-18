@@ -17,7 +17,8 @@ addNum(10);//인자값이 1개라서 NaN
 let addNum1 = (x,y)=>{
     return x + y;
 }
-document.write(addNum1(2,3)+"<br>");
+document.write(addNum1
+    (2,3)+"<br>");
 
 let addNum2 = (x,y) => x + y;
 document.write(addNum2(2,3)+"<br>");
